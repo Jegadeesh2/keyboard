@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --buttons-clr: rgb(104, 104, 255);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  min-height: 100vh;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  min-height: 20vh;
+  width: 50rem;
+  height: 150px;
+  resize: none;
+  padding: 10px;
+  font-size: 25px;
+  margin: 3rem 1rem 1rem 1rem;
+  outline: none;
+  border: 3.5px solid rgb(104, 104, 255);
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: var(--buttons-clr);
+  color: var(--white);
+  display: inline-block;
+  border: 0;
+  padding: 8px 1rem;
+  margin: 6px;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 10px;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.btn:hover,
+.delete:hover {
+  scale: 1.2;
+}
+
+.shift:hover,
+.space:hover,
+.showButton:hover,
+.hideButton:hover {
+  scale: 1.1;
+}
+
+.textarea-container {
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard-container {
+  background-color: black;
+  width: 50rem;
+  padding: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  margin: 2rem 0px 0px -150rem;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete {
+  background-color: var(--buttons-clr);
+  color: var(--white);
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  border: 0;
+  margin: 6px;
+  padding: 8px 1rem;
+  font-size: 26px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.shift {
+  background-color: var(--buttons-clr);
+  color: var(--white);
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  border: 0;
+  margin: 6px;
+  padding: 8px 1rem;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.space {
+  background-color: var(--buttons-clr);
+  color: var(--white);
+  width: 350px;
+  height: 50px;
+  border: 0;
+  margin: 6px;
+  padding: 8px 1rem;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.keyButton {
+  align-items: baseline;
+}
+
+.showHideButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showButton,
+.hideButton {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--buttons-clr);
+  color: var(--black);
+  width: 5rem;
+  height: 2rem;
+  padding: 1px;
+  margin: 2px 1rem;
+  border: 0;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.in {
+  position: relative;
+  margin: 2rem 0px 0px 0px;
+  transition: all 1s;
+}
